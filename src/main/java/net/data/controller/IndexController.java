@@ -1,4 +1,4 @@
-package net.data.visualization.controller;
+package net.data.controller;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

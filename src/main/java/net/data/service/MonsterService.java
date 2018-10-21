@@ -1,7 +1,7 @@
-package net.data.visualization.service;
+package net.data.service;
 
-import net.data.visualization.dao.MonsterDao;
-import net.data.visualization.model.entity.Monster;
+import net.data.dao.MonsterDao;
+import net.data.model.entity.Monster;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

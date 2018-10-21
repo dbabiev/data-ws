@@ -1,7 +1,7 @@
-package net.data.visualization.util;
+package net.data.util;
 
-import net.data.visualization.model.entity.Monster;
-import net.data.visualization.model.transfer.MonsterTO;
+import net.data.model.entity.Monster;
+import net.data.model.transfer.MonsterTO;
 
 public class TOConverter {
 

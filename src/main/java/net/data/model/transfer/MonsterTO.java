@@ -1,4 +1,4 @@
-package net.data.visualization.model.transfer;
+package net.data.model.transfer;
 
 import java.io.Serializable;
 

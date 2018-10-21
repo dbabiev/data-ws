@@ -1,4 +1,4 @@
-package net.data.visualization.model.entity;
+package net.data.model.entity;
 
 import javax.persistence.*;
 

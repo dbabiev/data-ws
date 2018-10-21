@@ -1,8 +1,8 @@
-package net.data.visualization.controller;
+package net.data.controller;
 
-import net.data.visualization.model.transfer.MonsterTO;
-import net.data.visualization.service.MonsterService;
-import net.data.visualization.util.TOConverter;
+import net.data.model.transfer.MonsterTO;
+import net.data.service.MonsterService;
+import net.data.util.TOConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

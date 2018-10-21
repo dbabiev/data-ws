@@ -1,6 +1,6 @@
-package net.data.visualization.dao;
+package net.data.dao;
 
-import net.data.visualization.model.entity.Monster;
+import net.data.model.entity.Monster;
 import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
