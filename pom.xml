@@ -19,8 +19,8 @@
 	</parent>
 
 	<properties>
-		<lombok.version>1.16.20.0</lombok.version>
-		<oauth2.version>2.2.1.RELEASE</oauth2.version>
+		<oauth2.version>2.0.0.RELEASE</oauth2.version>
+		<lombok.version>1.18.2</lombok.version>
 	</properties>
 
 	<dependencies>
@@ -63,7 +63,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok-maven</artifactId>
+			<artifactId>lombok</artifactId>
 			<version>${lombok.version}</version>
 			<scope>compile</scope>
 		</dependency>

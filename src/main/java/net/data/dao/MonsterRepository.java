@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 
 @Repository
-public class MonsterDao {
+public class MonsterRepository {
 
     @PersistenceContext
     private EntityManager em;
