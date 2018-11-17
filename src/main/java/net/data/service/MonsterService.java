@@ -1,6 +1,6 @@
 package net.data.service;
 
-import net.data.dao.MonsterRepository;
+import net.data.repository.MonsterRepository;
 import net.data.model.entity.Monster;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

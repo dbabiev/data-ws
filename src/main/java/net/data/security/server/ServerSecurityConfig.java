@@ -1,4 +1,4 @@
-package net.data.security;
+package net.data.security.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -17,6 +17,7 @@ public class ServerSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserDetailsService userDetailsService;
 
+    @Autowired
     private PasswordEncoder userPasswordEncoder;
 
     @Override
@@ -27,6 +28,6 @@ public class ServerSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder authManagerBuilder) throws Exception {
-        authManagerBuilder.userDetailsService(userDetailsService).passwordEncoder()
+        authManagerBuilder.userDetailsService(userDetailsService).passwordEncoder(userPasswordEncoder);
     }
 }

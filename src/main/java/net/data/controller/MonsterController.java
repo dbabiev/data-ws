@@ -12,7 +12,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 @RestController
-@RequestMapping("/monster")
+@RequestMapping("/api/monster")
 public class MonsterController {
 
     @Autowired

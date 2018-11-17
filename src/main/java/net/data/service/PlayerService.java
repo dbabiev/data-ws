@@ -1,6 +1,6 @@
 package net.data.service;
 
-import net.data.dao.PlayerRepository;
+import net.data.repository.PlayerRepository;
 import net.data.model.entity.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

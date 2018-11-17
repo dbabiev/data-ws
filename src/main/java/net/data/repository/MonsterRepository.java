@@ -1,4 +1,4 @@
-package net.data.dao;
+package net.data.repository;
 
 import net.data.model.entity.Monster;
 import org.springframework.stereotype.Repository;
