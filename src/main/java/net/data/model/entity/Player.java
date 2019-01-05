@@ -11,7 +11,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "player")
+@Table(name = "player", uniqueConstraints = { @UniqueConstraint(columnNames = { "login" }) })
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
@@ -40,8 +40,12 @@ public class Player implements UserDetails, Serializable {
     @Column(name = "enabled")
     private boolean enabled;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "player_authority", joinColumns = @JoinColumn(name = "player_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "authority_id", referencedColumnName = "id"))
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+        name = "player_authority",
+        joinColumns = @JoinColumn(name = "player_id", referencedColumnName = "id"),
+        inverseJoinColumns = @JoinColumn(name = "authority_id", referencedColumnName = "id")
+    )
     @OrderBy
     private Collection<Authority> authorities;
 

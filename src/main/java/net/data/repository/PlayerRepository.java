@@ -19,7 +19,7 @@ public class PlayerRepository {
     }
 
     public Player findByLogin(String login){
-        List<Player> players = em.createQuery("select p from Player p where p = :login", Player.class)
+        List<Player> players = em.createQuery("select p from Player p where p.login = :login", Player.class)
             .setParameter("login", login)
             .getResultList();
         return ListUtil.firstOrNull(players);
